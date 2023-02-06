@@ -11,7 +11,7 @@ const Home = () => {
         return;
       }
       setTypedText(prevText => prevText + fullText[prevText.length]);
-    }, 200);
+    }, 150);
 
     return () => {
       clearInterval(typingInterval);
