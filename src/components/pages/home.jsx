@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [typedText, setTypedText] = useState("");
-  const fullText = "Hello, I'm Icaro Araujo, Full Stack Developer";
+  const fullText = "Hello, I'm Icaro Araujo - Full Stack Developer";
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -11,18 +11,15 @@ const Home = () => {
         return;
       }
       setTypedText(prevText => prevText + fullText[prevText.length]);
-    }, 50);
+    }, 200);
 
     return () => {
       clearInterval(typingInterval);
     };
-  }, []);
+  }, [typedText.length]);
 
   return (
     <div className="home">
-      <div className="header">
-        <h3 className="name">Icaro's Portfolio</h3>
-      </div>
       <div className="content">
         <h1 className="typed-text">{typedText}</h1>
       </div>
