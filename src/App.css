@@ -1,0 +1,138 @@
+body {
+    font-family: Open Sans;
+}
+
+/* home css styles */
+.typed-text {
+  font-size: 24px;
+  text-align: center;
+  color: green;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  animation: matrix-animation 50s linear infinite;
+}
+
+@keyframes matrix-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.typed-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+  animation: matrix-animation-background 50s linear infinite;
+  transform-origin: top;
+}
+
+@keyframes matrix-animation-background {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+  /* navbar css styles */
+ 
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    flex-wrap: wrap;
+    background-color: transparent;
+    margin-bottom: -80px;
+  }
+  
+  .logo-nav {
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+   
+  }
+  
+  .logo-nav a{
+    text-decoration: none;
+    color: #1a6231;
+  }
+  
+  .logo-nav a:hover{
+    color: white;
+  }
+  
+  .nav-link ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 44px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .nav-link ul a {
+    text-decoration: none;
+    list-style-type: none;
+    color:#1a6231;
+  }
+  
+  .nav-link ul a:hover{
+    color: white;
+  }
+
+/* foot css */
+
+.foot-div{
+  background-color: black;
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+
+.follow-div p{
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.icon-main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-div {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  color: #1a6231;
+  padding: 10px 0px 10px 0px;
+}
+
+.icon-div div img{
+width:80%;
+}
+
+.right-div p{
+  margin:0px;
+  text-align: center;
+  color: #1a6231;
+  padding: 10px 0px 0px 0px;
+}
