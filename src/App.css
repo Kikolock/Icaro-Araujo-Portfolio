@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
 body {
   font-family: monospace;
 }
@@ -153,7 +156,7 @@ img{width: 100%;
   
   .logo-nav {
     font-family: monospace;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     cursor: pointer;
    
@@ -161,7 +164,8 @@ img{width: 100%;
   
   .logo-nav a{
     text-decoration: none;
-    color: rgba(245, 245, 245, 0.787);
+    color: #ea00d9;
+    text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6;
   }
   
   .logo-nav a:hover{
@@ -173,7 +177,7 @@ img{width: 100%;
     flex-direction: row;
     column-gap: 50px;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     padding-top: 15px;
     cursor: pointer;
@@ -182,7 +186,8 @@ img{width: 100%;
   .nav-link ul a {
     text-decoration: none;
     list-style-type: none;
-    color:rgba(245, 245, 245, 0.698);
+    color: #ea00d9;
+    text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6;
   }
   
   .nav-link ul a:hover{
@@ -217,11 +222,19 @@ img{width: 100%;
 .icon-div img{
   width:50px;
   height: 50px;
+  opacity: 50%;
+}
+
+.icon-div img:hover{
+  opacity:100%;
+  transform: scale(1.1);
+  transition: all 2s ease;
 }
 
 .right-div {
   text-align: center;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 /* About css */
@@ -231,10 +244,11 @@ img{width: 100%;
   align-items: center;
   justify-content: center;
   height: 110vh;
+  flex-direction: row;
 }
 
 .picture-container {
-  margin: 0px;
+  margin: 400px;
   width: 50%;
   display: flex;
   align-items: center;
@@ -242,10 +256,10 @@ img{width: 100%;
 }
 
 .picture {
-  width: 50%;
+  width: 35%;
   height: auto;
   border-radius: 50%;
-  background: linear-gradient(to right, #0008ff, #e903f5);
+  background: linear-gradient(to right, #0abdc6, #711c91);
   padding: 10px;
 }
 
@@ -254,23 +268,138 @@ img{width: 100%;
   align-items: center;
 }
 
-.name {
-  color: #fff;
-  margin-right: 50px;
-  margin-left: 50px;
-  font-size: 36px;
-  flex-wrap: nowrap;
+.name-container-2 {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .5rem;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.name-1 {
+  transform: translate(-50%) rotate(-10deg) skew(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  color: #711c91;
+  font-size: 6rem;
+  position: relative;
+  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6, 4px 4px #0abdc6, 5px 5px #0abdc6, 6px 6px #0abdc6;
+}
+
+.name-2 {
+  transform: translate(-50%) rotate(-10deg) skew(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  color: #711c91;
+  font-size: 6rem;
+  position: relative;
+  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6, 4px 4px #0abdc6, 5px 5px #0abdc6, 6px 6px #0abdc6;
 }
 
 .vertical-bar {
-  height: 400px;
-  width: 10px;
-  background-color: #e903f5;
+  height: 25rem;
+  background-color: #ea00d9;
+  border: 0.1rem solid #ea00d9;
+  border-radius: 1rem;
+  box-shadow: 1px 1px #0abdc6;;
 }
 
 .about-text {
-  width: 50%;
-  color: #fff;
-  text-align: center;
   padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: left;
+  color: #fffc;
+  font-size: 20px;
+  text-shadow: 1px 1px #ea00d9;
+}
+
+/* Contact css */
+
+.form-main-div {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  flex-direction: column;
+}
+
+.form-div {
+  background-color: #282c34;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0px 5px 10px #ea00d9;
+  border-radius: 10px;
+}
+
+.form-main-div h1 {
+  color: #711c91;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 7px;
+  color: #711c91;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fullname-div, .email-div, .message-div {
+  width: 100%;
+  margin: 10px 0;
+}
+
+input, textarea {
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0abdc6;
+  font-size: 26px;
+  outline: none;
+  resize: none;
+  margin-top: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+font-style: italic;
+color: #0abdc6;
+}
+
+.submit-div button{
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: #0abdc6;
+  border: solid #0abdc6 2px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.submit-div button:hover{
+  background-color: white;
+  color: #0abdc6;
+  border-color: white;
 }
