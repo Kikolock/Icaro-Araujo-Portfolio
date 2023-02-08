@@ -22,32 +22,30 @@ function Resume() {
                         <li>Version control/Git</li>
                         <li>Responsive design</li>
                     </ul>
-
                 </div>
                 <div id="backend-div" className="skill-div">
-                <h2>Back End Skills</h2>
+                    <h2>Back End Skills</h2>
                     <ul>
-                    <li>NodeJS</li>
-                    <li>APIs</li>
-					<li>Express</li>
-					<li>Model View Controller (MVC)</li>
-					<li>REST</li>
-					<li>Progressive Web Applications (PWA)</li>
+                        <li>NodeJS</li>
+                        <li>APIs</li>
+					    <li>Express</li>
+					    <li>Model View Controller (MVC)</li>
+					    <li>REST</li>
+					    <li>Progressive Web Applications (PWA)</li>
                     </ul>
                 </div>
                 <div id="database-div" className="skill-div">
                 <h2>Database Skills</h2>
                     <ul>
-                    <li>MySQL</li>
-					<li>Sequelize</li>
-					<li>NoSQL</li>
-					<li>GraphQL</li>
-					<li>MongoDB</li>
-					<li>Mongoose</li>
+                        <li>MySQL</li>
+					    <li>Sequelize</li>
+					    <li>NoSQL</li>
+					    <li>GraphQL</li>
+					    <li>MongoDB</li>
+					    <li>Mongoose</li>
                     </ul>
                 </div>
             </div>
-
         </div>
     )
 }
