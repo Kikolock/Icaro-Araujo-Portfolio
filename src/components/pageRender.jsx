@@ -45,6 +45,7 @@ function Container () {
 
   return (
     <div className='App'>
+
       <div>
         <Navbar currentPage={currentPage} pageChange={pageChange} />
       </div>
@@ -54,6 +55,7 @@ function Container () {
       <div>
         <Footer />
       </div>
+
     </div>
   );
 }

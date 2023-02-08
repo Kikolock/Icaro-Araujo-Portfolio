@@ -141,6 +141,16 @@ img{width: 100%;
   display: inline-block;
 } */
 
+@media (max-width: 767px) {
+  .home {
+    height: auto;
+  }
+  
+  .typed-text {
+    font-size: 3rem;
+  }
+}
+
   /* navbar css styles */
  
   .nav {
@@ -244,20 +254,19 @@ img{width: 100%;
   align-items: center;
   justify-content: center;
   height: 110vh;
-  flex-direction: row;
 }
 
-.picture-container {
-  margin: 400px;
-  width: 50%;
+.picture-container {  
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 200px;
+  margin-left: 100px;
 }
 
 .picture {
-  width: 35%;
-  height: auto;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   background: linear-gradient(to right, #0abdc6, #711c91);
   padding: 10px;
@@ -272,8 +281,6 @@ img{width: 100%;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: .5rem;
-  margin-left: 10px;
-  margin-right: 20px;
 }
 
 .name-1 {
@@ -325,6 +332,15 @@ img{width: 100%;
   justify-content: center;
   height: 110vh;
   flex-direction: column;
+  
+}
+
+.form-main-div h1 {
+  color: #711c91;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6;
+  margin-bottom: 40px;
 }
 
 .form-div {
@@ -333,18 +349,13 @@ img{width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 50px;
   box-shadow: 0px 5px 10px #ea00d9;
   border-radius: 10px;
+  margin-bottom: 300px;
 }
 
-.form-main-div h1 {
-  color: #711c91;
-  font-size: 3rem;
-  position: relative;
-  text-shadow: 1px 1px #0abdc6, 2px 2px #0abdc6, 3px 3px #0abdc6;
-  margin-bottom: 20px;
-}
+
 
 label {
   display: flex;
@@ -404,6 +415,13 @@ color: #0abdc6;
   border-color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  .form-div {
+    width: 100%;
+  }
+}
+
+
 /* Resume css */
 
 .resume-main-div{
@@ -424,6 +442,7 @@ color: #0abdc6;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10%;
 }
 
 .download-div h1 {
@@ -456,9 +475,10 @@ color: #0abdc6;
   column-gap: 50px;
   justify-content: center;
   margin-top: 64px;
-  flex-wrap: wrap;
+  margin-bottom: 64px;
+  flex-wrap: nowrap;
   row-gap: 30px;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .skill-div{
@@ -466,19 +486,18 @@ color: #0abdc6;
   box-shadow: 0px 6px 20px 4px #ea00d9;
   padding: 20px;
   color: #0abdc6;
-  font-size: 3rem;
+  font-size: 2.5rem;
   position: relative;
+  margin-bottom:20%;
   text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
-
 }
 .skill-div ul li{
   text-decoration: none;
   list-style-type: none;
   color: #0abdc6;
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
-
 }
 
 .skill-div ul{
@@ -489,6 +508,29 @@ color: #0abdc6;
   padding: 0px;
 }
 
+@media only screen and (max-width: 767px) {
+  .resume-main-div {
+    height: auto;
+  }
+
+  .download-div h1 {
+    font-size: 2rem;
+  }
+
+  .download-div button {
+    font-size: 14px;
+  }
+
+  .skill-div {
+    font-size: 1.5rem;
+  }
+
+  .skill-div ul li {
+    font-size: 1.5rem;
+  }
+}
+
+
 /* Portfolio css */
 
 .portfolio-main-div {
@@ -496,13 +538,13 @@ color: #0abdc6;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 110vh;
   flex-direction: column;
+  height: 110vh;
 }
 
 .portfolio-heading-div {
   margin-bottom: 50px;
-  margin-top: 250px;
+  margin-top: 40px;
 }
 
 .portfolio-heading-div h1{
@@ -520,8 +562,8 @@ color: #0abdc6;
 }
 
 .card-div {
-  width: 48%;
-  height: 350px;
+  width: 49%;
+  height: 300px;
   background-color: black;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -551,8 +593,8 @@ color: #0abdc6;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  width: 50%;
+  padding: 2% 2%;
+  width: 60%;
 }
 
 .title {
@@ -596,3 +638,57 @@ color: #0abdc6;
   height: 50px;
   width: 50px;
 }
+
+@media only screen and (max-width: 768px) {
+  .portfolio-main-div {
+  height: auto;
+  }
+  
+  .portfolio-heading-div {
+  margin-top: 150px;
+  }
+  
+  .portfolio-heading-div h1 {
+  font-size: 2rem;
+  }
+  
+  .cards-main-div {
+  width: 95%;
+  }
+  
+  .card-div {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  }
+  
+  .img-portfolio {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  }
+  
+  .img-portfolio img {
+  width: 100%;
+  height: 100%;
+  }
+  
+  .title h3 {
+  font-size: 24px;
+  }
+  
+  .description,
+  .skills {
+  font-size: 18px;
+  }
+  
+  .links {
+  flex-direction: column;
+  }
+  
+  .links div {
+  margin-right: 0px;
+  margin-bottom: 10px;
+  }
+  }

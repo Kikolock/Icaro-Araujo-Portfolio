@@ -13,22 +13,22 @@ function Resume() {
                 <div id="frontend-div" className="skill-div">
                     <h2>Front End Skills</h2>
                     <ul>
+                        <li>React</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
                         <li>jQuery</li>
                         <li>Bootstrap</li>
-                        <li>React</li>
-                        <li>version control/Git</li>
-                        <li>responsive design</li>
+                        <li>Version control/Git</li>
+                        <li>Responsive design</li>
                     </ul>
 
                 </div>
                 <div id="backend-div" className="skill-div">
                 <h2>Back End Skills</h2>
                     <ul>
+                    <li>NodeJS</li>
                     <li>APIs</li>
-					<li>NodeJS</li>
 					<li>Express</li>
 					<li>Model View Controller (MVC)</li>
 					<li>REST</li>
@@ -41,7 +41,6 @@ function Resume() {
                     <li>MySQL</li>
 					<li>Sequelize</li>
 					<li>NoSQL</li>
-					<li>SQLite</li>
 					<li>GraphQL</li>
 					<li>MongoDB</li>
 					<li>Mongoose</li>

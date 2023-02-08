@@ -83,8 +83,9 @@ function Portfolio() {
               <div className="description">
                 <p>{activity.description}</p>
               </div>
+              <br></br>
               <div className="skills">
-                <p>{activity.skills}</p>
+                <p>SKILLS  >>>   {activity.skills}</p>
               </div>
               <div className="links">
                 <div>
