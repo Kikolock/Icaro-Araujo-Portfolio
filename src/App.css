@@ -403,3 +403,196 @@ color: #0abdc6;
   color: #0abdc6;
   border-color: white;
 }
+
+/* Resume css */
+
+.resume-main-div{
+  background-color: #22252b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  flex-direction: column;
+}
+
+.resume-main-div h1{
+  text-align: center;
+}
+
+.download-div{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-div h1 {
+  text-decoration: none;
+  list-style-type: none;
+  color: #0abdc6;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+}
+
+.download-div button{
+  background-color: #0abdc6;
+  border: none;
+  padding: 8px 25px ;
+  border-radius: 4px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.download-div button:hover{
+  background-color: white;
+  color: #0abdc6;
+}
+
+.skills-div {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  margin-top: 64px;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  padding-bottom: 40px;
+}
+
+.skill-div{
+  border: solid #0abdc6 0px;
+  box-shadow: 0px 6px 20px 4px #ea00d9;
+  padding: 20px;
+  color: #0abdc6;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+
+}
+.skill-div ul li{
+  text-decoration: none;
+  list-style-type: none;
+  color: #0abdc6;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+
+}
+
+.skill-div ul{
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+/* Portfolio css */
+
+.portfolio-main-div {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  flex-direction: column;
+}
+
+.portfolio-heading-div {
+  margin-bottom: 50px;
+  margin-top: 250px;
+}
+
+.portfolio-heading-div h1{
+  color: #0abdc6;
+  font-size: 3rem;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+}
+
+.cards-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.card-div {
+  width: 48%;
+  height: 350px;
+  background-color: black;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.img-portfolio {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.img-portfolio img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  width: 50%;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.title h3 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #0abdc6;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0abdc6;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+}
+
+.skills {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0abdc6;
+  position: relative;
+  text-shadow: 1px 1px #711c91, 2px 2px #711c91, 3px 3px #711c91;
+}
+
+.links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.links div {
+  margin-right: 20px;
+}
+
+.iconss {
+  height: 50px;
+  width: 50px;
+}

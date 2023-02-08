@@ -1,7 +1,7 @@
 import React from "react";
 import picture from "../../assets/images/picture.jpeg"
 
-const About = () => {
+function About () {
   return (
     <section className="about section">
       <div className="section-content">
@@ -14,7 +14,12 @@ const About = () => {
             </h1>
             <div className="vertical-bar"></div>
             <div className="about-text">
-                <h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h1>
+                <h1>
+                  <p>Hello! I'm Icaro, a 30-year-old full-stack engineer and developer.</p>
+                  <p>I'm finishing the Bootcamp Full Stack at the University of Toronto.</p>
+                  <p>I have a bachelor's degree in mechanical engineering and quality engineering management.</p>
+                  <p>I have extensive experience in leadership and supervisory positions in the engineering sectors.</p>
+                </h1>
             </div>
           </div>
         </div>
